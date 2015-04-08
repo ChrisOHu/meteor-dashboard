@@ -21,6 +21,11 @@
 			Meteor.call 'adminCheckAdmin'
 			if typeof AdminConfig?.nonAdminRedirectRoute == 'string'
 				Router.go AdminConfig.nonAdminRedirectRoute
+
+		$('body')
+		  .addClass "skin-blue fixed"
+      .attr "data-spy", "scroll"
+      .attr "data-target", "#scrollspy"
 		
 		@next()
 

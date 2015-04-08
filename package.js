@@ -1,8 +1,8 @@
 Package.describe({
-  name: "yogiben:admin",
-  summary: "A complete admin dashboard solution",
-  version: "1.1.0",
-  git: "https://github.com/yogiben/meteor-admin"
+  name: "spirit:dashboard",
+  summary: "A complete dashboard solution",
+  version: "1.0.0",
+  git: ""
 });
 
 Package.on_use(function(api){
@@ -32,18 +32,18 @@ Package.on_use(function(api){
   api.use(['email'],'server')
 
   api.add_files([
-    'lib/both/AdminDashboard.coffee',
-    'lib/both/router.coffee',
-    'lib/both/utils.coffee',
-    'lib/both/startup.coffee',
-    'lib/both/collections.coffee'
+    'lib/lib/AdminDashboard.coffee',
+    'lib/lib/router.coffee',
+    'lib/lib/utils.coffee',
+    'lib/lib/startup.coffee',
+    'lib/lib/collections.coffee'
     ], both);
 
   api.add_files([
     //AdminLTE
-    'lib/AdminLTE/css/_all-skins.css',
-    'lib/AdminLTE/css/AdminLTE.css',
-    'lib/AdminLTE/js/app.js',
+    'lib/client/lib/AdminLTE/css/_all-skins.css',
+    'lib/client/lib/AdminLTE/css/AdminLTE.css',
+    'lib/client/lib/AdminLTE/js/app.js',
 
     'lib/client/html/admin_templates.html',
     'lib/client/html/admin_widgets.html',
@@ -54,7 +54,6 @@ Package.on_use(function(api){
     'lib/client/js/helpers.coffee',
     'lib/client/js/templates.coffee',
     'lib/client/js/events.coffee',
-    'lib/client/js/slim_scroll.js',
     'lib/client/js/autoForm.coffee',
     ], 'client');
 

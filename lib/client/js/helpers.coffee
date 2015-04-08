@@ -1,4 +1,4 @@
-Template.registerHelper('AdminTables', AdminTables);
+Template.registerHelper('AdminTables', AdminTables)
 
 UI.registerHelper 'AdminConfig', ->
 	AdminConfig if typeof AdminConfig != 'undefined'
