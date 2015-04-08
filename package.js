@@ -40,13 +40,16 @@ Package.on_use(function(api){
     ], both);
 
   api.add_files([
+    //AdminLTE
+    'lib/AdminLTE/css/_all-skins.css',
+    'lib/AdminLTE/css/AdminLTE.css',
+    'lib/AdminLTE/js/app.js',
+
     'lib/client/html/admin_templates.html',
     'lib/client/html/admin_widgets.html',
     'lib/client/html/admin_layouts.html',
     'lib/client/html/admin_sidebar.html',
     'lib/client/html/admin_header.html',
-    'lib/client/css/admin-layout.less',
-    'lib/client/css/admin-custom.less',
     'lib/client/js/admin_layout.js',
     'lib/client/js/helpers.coffee',
     'lib/client/js/templates.coffee',
